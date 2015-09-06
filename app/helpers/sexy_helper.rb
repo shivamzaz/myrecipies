@@ -1,0 +1,2 @@
+module SexyHelper
+end
