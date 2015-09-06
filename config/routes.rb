@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'sex#anal'
   get 'sex/anal'
 
   get 'sexy/hardcore'

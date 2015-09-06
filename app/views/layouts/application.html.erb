@@ -7,28 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header class= "navbar navbar-fixed-top navbar-default">
-	<div class="container">
-		<%=link_to "myrecipies","",class: "btn btn-lg btn-success", id:"logo" %>
-			<div class="nav_item">
-				<%= link_to "link3","",class: "btn btn-default btn-warning" %>
-			</div>
-			<div class="nav_item">
-				<%= link_to "link2","",class: "btn btn-default btn-warning" %>
-			</div>
-			<div class="nav_item">
-				<%= link_to "link2","",class: "btn btn-default btn-warning" %>
-			</div>
-			</div>
-			</header>
-			<div class ="container">
-				<div class="class jumbotron">
-	<h1> Welcome to myrecipies</h1>
-	<h2> This is the HOME PAGE maded by Chef Shivam Gupta</h2>
-
-	<center><%= link_to "Sign up now!", "",class: "btn btn-lg btn-success" %></center></div>
+<%= render 'layouts/navigation' %>
 			<%= yield %>
- <div class="footer">
- 	<p>&copy; shivamzaz@imsec 2015</p></div>
+ <%= render 'layouts/footer' %>
+
 </body>
 </html>
